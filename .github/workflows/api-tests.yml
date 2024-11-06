@@ -27,8 +27,8 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: Upload test report
+    - name: Upload test report
+      uses: actions/upload-artifact@v4
       with:
         name: test_results
         path: ./mochawesome-report
