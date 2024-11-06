@@ -30,4 +30,4 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: test_results
-        path: API_nodejs/API_nodejs/mochawesome-report
+        path: ./mochawesome-report/*.html
